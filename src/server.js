@@ -23,7 +23,7 @@ app.use(bodyParser.urlencoded({
 	extended: true,
 }))
 
-
+ 
 app.use(express.static("src/assets"))
 app.use(routes)
 
