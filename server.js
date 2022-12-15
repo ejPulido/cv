@@ -30,5 +30,5 @@ app.use(routes)
   
 
 app.listen(port, (req, res)=>{
-	console.log('server run in port: ',port)
+	console.log('server run in ports: ',port)
 })
