@@ -8,7 +8,7 @@ const app = express()
 const routes = require("./src/routes/routes.js")
 let port = process.env.PORT || '6000';
 
-
+/* 
 app.use(session({ 
 	secret: 'secreto',
 	resave: true,
@@ -27,8 +27,12 @@ app.use(bodyParser.urlencoded({
 app.use(express.static("src/assets"))
 app.use(routes)
 
- 
- 
+  */
+
+app.get('/', (req, res)=>{
+	res.send('hi')
+})
+
 app.listen(port, (req, res)=>{
 	console.log('server run in port: ',port)
 })
