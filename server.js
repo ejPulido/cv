@@ -1,14 +1,14 @@
 const express = require('express')
-//const { engine } = require('express-handlebars')
-//const myConnection = require('express-myconnection')
-//const session = require('express-session')
-//const bodyParser = require('body-parser')
-//const connection = require("./src/connection/connection")
+const { engine } = require('express-handlebars')
+const myConnection = require('express-myconnection')
+const session = require('express-session')
+const bodyParser = require('body-parser')
+const connection = require("./src/connection/connection")
 const app = express()
-//const routes = require("./src/routes/routes.js")
+const routes = require("./src/routes/routes.js")
 let port = process.env.PORT || '8000';
 
-/* 
+
 app.use(session({ 
 	secret: 'secreto',
 	resave: true,
@@ -27,11 +27,7 @@ app.use(bodyParser.urlencoded({
 app.use(express.static("src/assets"))
 app.use(routes)
 
-  */
-
-app.get('/', (req, res)=>{
-	res.send('hi')
-})
+  
 
 app.listen(port, (req, res)=>{
 	console.log('server run in port: ',port)
