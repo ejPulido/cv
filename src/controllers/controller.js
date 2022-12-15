@@ -112,7 +112,7 @@ controllers.logout = function(req, res){
         req.session.destroy();
     }
 
-       res.render('login',{clases: ' ', contenido: '', logged: false})
+       res.redirect('/login')
 }
 
 
