@@ -1,0 +1,498 @@
+:root{
+	--azul: #57c6d4;
+	--naranja:#fec107;
+	--rosa: #ee5c6f;
+	--verde: #42b72a;
+	--azulMarino:  #221f70;
+}
+
+
+@font-face{
+    font-family: "playfair";
+    src: url("../fonts/PlayfairDisplay-Regular.ttf");
+}
+
+@font-face{
+    font-family: "Roboto_Slab";
+    src: url("../fonts/RobotoSlab-Regular.ttf");
+}
+ 
+
+*{ 
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+
+ }
+
+
+.nav_container{
+	display: flex;
+	height: 10vh;
+	padding-left: 1em;
+	padding-right: 1em;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav__title{
+	font-family: "playfair";
+}
+
+.nav__links{
+	
+}
+.nav__ul{ 
+	display: flex;
+ 	list-style: none;
+ }
+
+ .nav__li{
+ 	padding: .5em;
+ 	
+ }
+
+ .nav__link{
+ 	text-decoration: none;
+ 	color: #000;
+ }
+
+.hero{
+	background-color: var(--naranja);
+	height: 90vh;
+}
+.hero__container{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: space-between;
+	overflow: hidden;
+}
+
+.hero__containerTitle{ 
+	width: 40%;
+	align-self: center;
+	margin-left: 1em;
+ }
+
+.hero__title{
+	margin-bottom: .3em;
+	font-size: 80px;
+	color: #222;
+	font-family: "playfair";
+}
+
+.hero__info{
+	margin-left: .5em;
+	font-family: "Roboto_Slab";
+}
+
+.cta__container{
+	margin-top: 1em;
+	margin-left: 1em;
+}
+
+.hero__cta{
+	text-align: center;
+	display: inline-block;
+	width: 200px;
+	height: 40px;
+	padding-top: 5px;
+	background-color: var(--azulMarino);
+	color: #fff;
+	font-size: 24px;
+	text-decoration: none;
+	border-radius: 1em;
+	
+}
+
+.hero__cta:hover{
+	background-color: var(--azul);
+	color: var(--azulMarino);
+}
+
+.hero__containerImg{
+	width: 50%;
+	background-color: var(--azul);
+}
+
+.hero__img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/*cuerpo de la página*/
+
+.about{
+	width: 100%;
+	height: 100vh;
+	background-color: #efefef;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.about__title{
+	font-size: 60px;
+	margin-bottom: 1em;
+	font-family: "playfair";
+}
+
+.about__content{
+	display: flex;
+	justify-content: space-around;
+}
+
+.about__imgContainer{
+	height: 60vh;
+	margin-left: 1em;
+}
+
+.about__img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+
+}
+
+.about__info{
+	width: 60%;
+}
+
+.about__p{
+	font-family: "Roboto_Slab";
+
+}
+
+.about__final{
+	position: absolute;
+	width: 100%;
+	height: 300px;
+	bottom: 0;
+	background-color: var(--naranja);
+}
+
+
+/*tecnology*/
+
+.tecnology{
+	height: 100vh;
+	background-color: var(--naranja);
+	position: relative;
+}
+
+.tecnology__content{
+	padding: 2em;
+	height: 100%;
+	position: relative;
+}
+
+.tecnology__titleContainer{
+	margin: .2em 2em;
+	font-size: 30px;
+}
+
+.tecnology__title{
+	font-family: "playfair";
+}
+
+.tecnology__tools{
+	display: flex;
+	font-family: "Roboto_Slab";
+	justify-content: space-around;
+	align-items: center;
+	font-weight: 700;
+}
+
+.tecnology__tool{
+	width: 20%;
+	margin-top: 2em;
+}
+
+.tecnology__svg{
+	height: 200px;
+}
+
+.svgTools{ 
+	width: 100%;
+	height: 100%;
+ }
+
+
+.tecnology__name{
+	text-align: center;
+}
+
+.tecnology__final{
+	position: absolute;
+	width: 100%;
+	height: 310px;
+	bottom: 0;
+	background-color: #efefef;
+
+}
+
+
+
+/*study*/
+
+.study{
+	background-color: #efefef;
+	padding: 2em;
+	height: 60vh;
+
+}
+
+.study__flex{
+	display: flex;
+	justify-content: space-around;
+}
+
+.study__svgContainer{
+	width: 300px;
+	height:150px;
+}
+
+.study__svg{
+	width: 100%;
+	height: 100%;
+	fill:#5554;
+}
+
+.study__titleContainer{
+	margin: .2em 2em;
+	font-size: 30px;
+}
+
+.study__title{
+	font-family: "playfair";
+}
+.study__info{
+margin-top: 1em;
+}
+
+.study__list{
+	list-style: none;
+}
+
+.study__listElement{
+	font-family: "Roboto_Slab";
+	font-size: 20px;
+}
+
+
+/*jobs*/
+
+.jobs{
+	height: 60vh;
+	background-color: var(--azul);
+}
+
+.jobs__container{
+	padding: 2em;
+}
+
+.jobs__titleContainer{
+	padding: .5em 2em;
+	margin-bottom: 2em;
+}
+
+.jobs__title{
+	font-family: "playfair";
+	font-size: 30px;
+
+}
+
+.jobs__content{
+	font-family: "Roboto_Slab";
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.jobs__svgContainer{
+	width: 150px;
+}
+
+.jobs__svg{
+	fill: #5557;
+}
+
+.jobs__info{
+	font-size: 20px;
+}
+
+.jobs__list{
+	list-style: none;
+}
+
+.jobs__element{
+
+}
+
+/*contact*/
+
+.contact{
+background-color: #efefef;
+	padding: 2em;
+	height: 60vh;
+}
+
+.contact__flex{
+	display: flex;
+	justify-content: space-around;
+}
+
+.contact__titleContainer{
+	margin: .2em 2em;
+	font-size: 30px;
+}
+
+.contact__title{
+	font-family: "playfair";
+
+}
+
+.contact__svgContainer{
+	width: 300px;
+	height:150px;
+}
+
+.contact__svg{
+	width: 100%;
+	height: 100%;
+	fill:#5554;
+}
+
+.contact__info{
+	margin-top: 1em;
+
+}
+
+.contact__list{
+	list-style: none;
+}
+
+
+
+.contact__element{
+	font-family: "Roboto_Slab";
+	font-size: 20px;
+	margin: 1em;
+}
+
+/*Login estilos de login*/
+.login{
+	height: 90vh;
+	background-color: var(--naranja);
+	position: relative;
+}
+.login__content{
+	padding: 1em;
+	height: 100%;
+	position: relative;
+}
+.login__titleContainer{
+	
+	font-size: 24px;
+	text-align: center;
+}
+.login__title{
+	font-family: "playfair";
+
+}
+
+.card{ 
+	width: 50%;
+	min-height: 50vh;
+	margin: .5em auto;
+
+	background-color: #fff;
+	border-radius: .5em;
+	padding: 1em;
+ }
+
+.card-register{
+	display: flex;
+	flex-direction: column;
+
+}
+.card-login{
+	display: flex;
+	flex-direction: column;
+}
+.msg{
+	width: 30%;
+	background-color: red;
+	margin: .3em;
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding: 11px;
+	font-weight: 700;
+	color:var(--azulMarino);
+	border-radius: .5em;
+}
+.container-inputLoginRegister {
+	width: 100%;
+}
+
+.nameAndLastName{ 
+	display: flex;
+	justify-content: space-between;
+ }
+
+.inputLoginRegister{
+	display: block;
+	width: 100%;
+	height: 32px;
+	padding: 11px;
+	border-radius: .3em;
+	border:  1px solid #ccd0d5;
+	background-color: #f5f6f7;
+	margin: .5em 0;
+}
+
+.inputLoginRegister--nameAndLastName{
+	display: inline-block;
+	width: 48%;
+
+}
+
+.btn-submit{
+	width: 40%;
+	height: 36px;
+	border-radius: .2em;
+	border-style: none;
+	margin: .5em auto;
+	background-color: var(--verde);
+	font-size: 18px;
+	font-weight: 700;
+	color: #fff;
+	cursor: pointer;
+}
+.btn-submit--login{
+	width: 100%;
+
+}
+.poligon__hero{ 
+clip-path: polygon(14% 0, 100% 0, 100% 100%, 0% 100%);
+
+ }
+
+.polygon__about{
+clip-path: polygon(0 9%, 80% 0%, 100% 100%, 0% 100%);
+}
+
+.polygon__final{
+	clip-path: polygon(50% 89%, 100% 84%, 100% 100%, 0% 100%);
+}
+.inactive__tool{ 
+	clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+ }
+
+ .tool__active{
+ 	clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+ }

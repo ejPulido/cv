@@ -1,0 +1,45 @@
+<%- include('../partials/header')%>
+
+	
+		<article class="login" id="tecnology">
+			<div class="login__content">
+				
+				<div class="card">
+					<div class="login__titleContainer">
+					<h2 class="login__title">Iniciar sesión</h2>
+					<hr style="border-color: #fff;">
+					</div>
+					<div  <%=clases%> >
+					<%=contenido%>
+					</div>
+					<form class="card-login" action="/login" method="post">
+						<div class="container-inputLoginRegister">
+							
+							<input type="text" name="email" class="inputLoginRegister"
+							placeholder="Correo electrónico" 
+							>
+						</div>
+
+						<div class="container-inputLoginRegister">
+							
+							<input type="password" name="password" class="inputLoginRegister"
+							placeholder="Contraseña" 
+							>
+							
+						</div>
+							
+						<input type="submit" class="btn-submit btn-submit--login " value="Entrar">
+
+					</form>
+					<span>¿Aun no tienes una cuenta? entonces <a href="/register">click aquí para tener una.</a> </span>
+				</div>
+					
+				</div>
+
+
+			</div>
+			<div class="tecnology__final polygon__final"></div>
+
+		</article>
+</body>
+</html>

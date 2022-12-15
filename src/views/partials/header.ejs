@@ -1,0 +1,40 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Curriculo</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+
+	<header > 
+		<nav class="nav">
+			<div class="nav_container">
+				<div class="nav__title">
+					<h2>EjPulidoDev</h2>
+				</div>
+
+				<div class="nav__links">
+					<ul class="nav__ul">
+						<%if(logged){%>
+						<li class="nav__li"> <a href="#about" class="nav__link">Acerca de mí</a> </li>
+						<li class="nav__li"> <a href="#tecnology" class="nav__link">Tecnologías</a></li>
+						<li class="nav__li"> <a href="#study" class="nav__link">Estudio</a> </li>
+						<li class="nav__li"> <a href="#jobs" class="nav__link">Experiencia</a> </li>
+						<li class="nav__li"> <a href="#contact" class="nav__link">Contacto</a> </li>
+						<li class="nav__li"> <a href="/logout" class="nav__link">Salir</a> </li>
+						
+						<%}else {%>
+						
+						<li class="nav__li"> <a href="/login" class="nav__link">Iniciar sesión</a> </li>
+						<li class="nav__li"> <a href="/register" class="nav__link">Registrarse</a> </li>
+						<%}%>
+					</ul>
+				</div>
+
+			</div>
+		</nav>
+		
+	</header>

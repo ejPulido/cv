@@ -1,0 +1,63 @@
+<%- include('../partials/header')%>
+
+	
+		<article class="login" id="tecnology">
+			<div class="login__content">
+
+				<div class="card">
+					<div class="login__titleContainer">
+					<h2 class="login__title">Registro</h2>
+					<hr style="border-color: #fff;">
+					</div>
+					<div  <%=clases%> >
+					<%=contenido%>
+
+					</div>
+					<form class="card-register" action="/register" method="post">
+						
+						<div class="container-inputLoginRegister nameAndLastName">
+							<input type="text" name="name" class="inputLoginRegister  inputLoginRegister--nameAndLastName"
+								placeholder="Nombre" 
+							>
+							<input type="text" name="lastName" class="inputLoginRegister inputLoginRegister--nameAndLastName"
+							placeholder="Apellido" 
+							>
+						</div>
+							
+						
+						
+						<div class="container-inputLoginRegister">
+							<input type="email" name="email" class="inputLoginRegister"
+							placeholder="Correo electrónico">
+						</div>
+							
+						<div class="container-inputLoginRegister">
+							<input type="text" name="userName" class="inputLoginRegister"
+							placeholder="Nombre de usuario" 
+							>
+						</div>
+						
+							
+				
+						<div class="container-inputLoginRegister">
+							<input type="password" name="password" class="inputLoginRegister"
+							placeholder="Contraseña" 
+							>
+						</div>
+							
+						
+						<input type="submit" class="btn-submit">
+
+					</form>
+					<span>¿Ya tienes una cuenta? entonces <a href="/login">click aquí para iniciar sesión.</a> </span>
+				</div>
+					
+				</div>
+
+				
+			</div>
+			<div class="tecnology__final polygon__final"></div>
+
+		</article>
+</body>
+</html>
