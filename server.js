@@ -3,9 +3,9 @@ const { engine } = require('express-handlebars')
 const myConnection = require('express-myconnection')
 const session = require('express-session')
 const bodyParser = require('body-parser')
-const connection = require("./src/connection/connection")
+//const connection = require("./src/connection/connection")
 const app = express()
-const routes = require("./src/routes/routes.js")
+//const routes = require("./src/routes/routes.js")
 let port = process.env.PORT || '8000';
 
 /* 
