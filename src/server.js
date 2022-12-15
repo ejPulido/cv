@@ -6,7 +6,7 @@ const bodyParser = require('body-parser')
 const connection = require("./connection/connection")
 const app = express()
 const routes = require("./routes/routes.js")
-let port = process.env.PORT || '5000';
+let port = process.env.PORT || '8000';
 
 
 app.use(session({ 
